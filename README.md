@@ -27,7 +27,7 @@ curl 'https://developer.chrome.com/_d/dynamic_content' \
   -H 'accept: */*' \
   -H 'accept-language: en-US,en;q=0.9,nl;q=0.8,fr;q=0.7' \
   -H 'content-type: text/plain;charset=UTF-8' \
-  --data-raw '[null,null,null,"type:blog",null,null,null,null,31,null,null,null,2]' \
+  --data-raw '[null,null,null,"type:blog",null,null,null,null,10,null,null,null,2]' \
   --compressed
 ```
 
@@ -38,7 +38,7 @@ curl 'https://developer.chrome.com/_d/dynamic_content' \
   -H 'accept: */*' \
   -H 'accept-language: en-US,en;q=0.9,nl;q=0.8,fr;q=0.7' \
   -H 'content-type: text/plain;charset=UTF-8' \
-  --data-raw '[null,null,null,"type:case_study",null,null,null,null,501,null,null,null,1]' \
+  --data-raw '[null,null,null,"type:case_study",null,null,null,null,10,null,null,null,1]' \
   --compressed
 ```
 
