@@ -6,6 +6,9 @@ This repo contains a Cloudflare Worker that generates RSS Feeds for the various 
 
 - Blog: https://chrome-for-developers-rss.bramus.workers.dev/blog
 - Case Studies: https://chrome-for-developers-rss.bramus.workers.dev/case-studies
+- All: https://chrome-for-developers-rss.bramus.workers.dev/all
+
+Warning: the “all” feed is a very noisy one as it contains all changes to all pages – you’ll get an RSS entry for each and every change, no matter how big or small it was.
 
 ## Dev
 
@@ -39,6 +42,17 @@ curl 'https://developer.chrome.com/_d/dynamic_content' \
   -H 'accept-language: en-US,en;q=0.9,nl;q=0.8,fr;q=0.7' \
   -H 'content-type: text/plain;charset=UTF-8' \
   --data-raw '[null,null,null,"type:case_study",null,null,null,null,10,null,null,null,1]' \
+  --compressed
+```
+
+### All
+
+```bash
+curl 'https://developer.chrome.com/_d/dynamic_content' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9,nl;q=0.8,fr;q=0.7' \
+  -H 'content-type: text/plain;charset=UTF-8' \
+  --data-raw '[null, null, null, "tenant:chrome", null, null, null, null, 100, null, null, null, 2, 1]' \
   --compressed
 ```
 

@@ -3,6 +3,7 @@ const endpoint = 'https://developer.chrome.com/_d/dynamic_content';
 const data = {
 	blog: '[null,null,null,"type:blog",null,null,null,null,10,null,null,null,2]',
 	'case-studies': '[null,null,null,"type:case_study",null,null,null,null,10,null,null,null,1]',
+	all: '[null, null, null, "tenant:chrome", null, null, null, null, 100, null, null, null, 2, 1]',
 };
 
 const headers = {
