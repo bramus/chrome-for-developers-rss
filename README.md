@@ -4,7 +4,7 @@ This repo contains a Cloudflare Worker that generates RSS Feeds for the various 
 
 ## Live Endpoints
 
-- Blog: https://chrome-for-developers-rss.bramus.workers.dev/blog
+- Blog: ~~https://chrome-for-developers-rss.bramus.workers.dev/blog~~ _(redirects to the official https://developer.chrome.com/blog/feed.xml)_
 - Case Studies: https://chrome-for-developers-rss.bramus.workers.dev/case-studies
 - All: https://chrome-for-developers-rss.bramus.workers.dev/all
 

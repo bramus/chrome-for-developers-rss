@@ -1,3 +1,7 @@
+const redirects = {
+	blog: 'https://developer.chrome.com/blog/feed.xml',
+};
+
 const endpoint = 'https://developer.chrome.com/_d/dynamic_content';
 
 const data = {
@@ -12,4 +16,4 @@ const headers = {
 	'content-type': 'text/plain;charset=UTF-8',
 };
 
-export { endpoint, data, headers };
+export { redirects, endpoint, data, headers };
